@@ -7,13 +7,13 @@ def flow = new io.fabric8.Fabric8Commands()
 
 dockerTemplate{
     s2iNode{
-        git "https://github.com/${project}.git"
+        checkout scm
         if (env.BRANCH_NAME.startsWith('PR-')) {
             echo 'Running CI pipeline'
             snapshot = true
             def snapshotImageName = "fabric8/jenkins-openshift:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
             container('s2i') {
-                sh "s2i build . fabric8/jenkins-openshift-base:v3952027 ${snapshotImageName} --copy"
+                sh "s2i build . fabric8/jenkins-openshift-base:v3952027 ${snapshotImageName}"
             }
 
             stage "push snapshot to dockerhub"
