@@ -20,3 +20,5 @@ then
 else 
     echo 'Jenkins is idle, stopping pod.'
 fi
+
+echo 'test 4'
