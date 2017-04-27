@@ -13,7 +13,7 @@ dockerTemplate{
             snapshot = true
             def snapshotImageName = "fabric8/jenkins-openshift:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
             container('s2i') {
-                sh "s2i build . fabric8/jenkins-openshift-base:v1d38cd1 ${snapshotImageName} --copy"
+                sh "s2i build . fabric8/jenkins-openshift-base:v2328e5e ${snapshotImageName} --copy"
             }
 
             stage "push snapshot to dockerhub"
