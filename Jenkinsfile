@@ -4,6 +4,7 @@ def repo = 'openshift-jenkins-s2i-config'
 def org = 'fabric8io'
 def project = org + '/' + repo
 def flow = new io.fabric8.Fabric8Commands()
+def baseImageVerion = 'v2328e5e'
 
 dockerTemplate{
     s2iNode{
@@ -13,7 +14,7 @@ dockerTemplate{
             snapshot = true
             def snapshotImageName = "fabric8/jenkins-openshift:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
             container('s2i') {
-                sh "s2i build . fabric8/jenkins-openshift-base:v1d38cd1 ${snapshotImageName} --copy"
+                sh "s2i build . fabric8/jenkins-openshift-base:${baseImageVerion} ${snapshotImageName} --copy"
             }
 
             stage "push snapshot to dockerhub"
@@ -42,7 +43,7 @@ dockerTemplate{
 
             stage 's2i build'
             container('s2i') {
-                sh 's2i build . fabric8/jenkins-openshift-base:v3952027 fabric8/jenkins-openshift:latest --copy'
+                sh "s2i build . fabric8/jenkins-openshift-base:${baseImageVerion} fabric8/jenkins-openshift:latest --copy"
             }
             
             stage 'push to dockerhub'
