@@ -38,7 +38,7 @@ git-client:2.4.6
 git-server:1.7
 git:3.4.1
 github-api:1.86
-github-branch-source:2.2.2
+github-branch-source:2.2.3
 github-issues:1.2.2
 github-oauth:0.27
 github-organization-folder:1.6
