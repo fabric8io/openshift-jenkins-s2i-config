@@ -23,7 +23,7 @@ blueocean:1.1.4
 bouncycastle-api:2.16.1
 branch-api:2.0.11
 build-timeout:1.18
-cloudbees-folder:6.0.4
+cloudbees-folder:6.1.0
 credentials-binding:1.12
 credentials:2.1.14
 display-url-api:2.0
@@ -34,9 +34,9 @@ email-ext:2.58
 external-monitor-job:1.7
 favorite:2.3.0
 ghprb:1.39.0
-git-client:2.4.6
+git-client:2.5.0
 git-server:1.7
-git:3.4.1
+git:3.5.0
 github-api:1.86
 github-branch-source:2.2.3
 github-issues:1.2.2
