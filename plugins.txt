@@ -1,4 +1,5 @@
 ace-editor:1.1
+async-http-client:1.7.8
 ant:1.5
 antisamy-markup-formatter:1.5
 authentication-tokens:1.3
@@ -29,6 +30,7 @@ credentials:2.1.14
 display-url-api:2.0
 docker-commons:1.8
 docker-workflow:1.12
+dockerhub-notification:2.2.0
 durable-task:1.14
 email-ext:2.58
 embeddable-build-status:1.9
