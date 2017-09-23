@@ -4,7 +4,7 @@ def repo = 'openshift-jenkins-s2i-config'
 def org = 'fabric8io'
 def project = org + '/' + repo
 def flow = new io.fabric8.Fabric8Commands()
-def baseImageVerion = 'v826d5fc'
+def baseImageVerion = 'v3ad8ded'
 
 dockerTemplate{
     s2iNode{
