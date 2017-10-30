@@ -5,7 +5,7 @@ def org = 'fabric8io'
 def project = org + '/' + repo
 def flow = new io.fabric8.Fabric8Commands()
 def baseImageVerion = "v51128bd"
-def deploySnapshot = true
+def deploySnapshot = false
 def pipeline
 def snapshotImageName
 
