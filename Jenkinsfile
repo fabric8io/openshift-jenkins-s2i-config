@@ -71,7 +71,6 @@ dockerTemplate{
                 ]
                 version = newVersion
                 containerName = 's2i'
-                autoMerge = true
             }
         }
     }
