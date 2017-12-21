@@ -136,3 +136,4 @@ workflow-scm-step:2.6
 workflow-step-api:2.14
 workflow-support:2.16
 ws-cleanup:0.34
+prometheus:1.1.0
