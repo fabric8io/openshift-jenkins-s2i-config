@@ -66,3 +66,6 @@ You'll need to [expose the Jenkins JNLP port](https://github.com/rawlingsj/opens
 ## TODO
 1. This example is currently hard coded to run in the default namespace at the moment.  I had a go at using a `KUBERNETES_NAMESPACE` env var as per the [fabric8 version](https://github.com/fabric8io/jenkins-docker/blob/master/config/config.xml#L159) which is [set](https://github.com/rawlingsj/openshift-jenkins-s2i-config/blob/master/jenkins-template.yml#L65) and available in the container but I ran into an issue starting the agent pod, so it needs to be looked at again.
 2. Add the SNAPSHOT [openshift-jenkins-sync-plugin](https://github.com/fabric8io/openshift-jenkins-sync-plugin) to this project
+
+
+DO NOT MERGE - 2
