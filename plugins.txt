@@ -87,7 +87,6 @@ oic-auth:1.0
 openid:2.2
 openid4java:0.9.8.0
 openshift-client:1.0.2
-openshift-login:1.0.5
 openshift-pipeline:1.0.52
 openshift-sync:0.1.32
 pam-auth:1.3
