@@ -6,7 +6,6 @@ apache-httpcomponents-client-4-api:4.5.3-2.0
 async-http-client:1.9.40.0
 authentication-tokens:1.3
 blueocean-autofavorite:1.2.1
-blueocean-bitbucket-pipeline:1.3.4
 blueocean-commons:1.3.4
 blueocean-config:1.3.4
 blueocean-dashboard:1.3.4
@@ -15,7 +14,6 @@ blueocean-events:1.3.4
 blueocean-git-pipeline:1.3.4
 blueocean-github-pipeline:1.3.4
 blueocean-i18n:1.3.4
-blueocean-jira:1.3.4
 blueocean-jwt:1.3.4
 blueocean-personalization:1.3.4
 blueocean-pipeline-api-impl:1.3.4
@@ -28,7 +26,6 @@ blueocean:1.3.4
 bouncycastle-api:2.16.2
 branch-api:2.0.16
 build-timeout:1.19
-cloudbees-bitbucket-branch-source:2.2.7
 cloudbees-folder:6.2.1
 config-file-provider:2.16.4
 credentials-binding:1.13
@@ -54,9 +51,6 @@ github-organization-folder:1.6
 github-pr-coverage-status:1.9.1
 github-pullrequest:0.1.0-rc27
 github:1.28.1
-gitlab-merge-request-jenkins:2.0.0
-gitlab-oauth:1.0.9
-gitlab-plugin:1.5.2
 google-login:1.3
 gradle:1.28
 gravatar:2.1
@@ -64,7 +58,6 @@ handlebars:1.1.1
 htmlpublisher:1.14
 icon-shim:2.0.3
 jackson2-api:2.8.7.0
-jira:2.5
 jquery-detached:1.2.1
 jsch:0.1.54.1
 junit:1.23
@@ -77,10 +70,8 @@ mapdb-api:1.0.9.0
 mask-passwords:2.10.1
 matrix-auth:2.2
 matrix-project:1.12
-mercurial:2.2
 metrics:3.1.2.10
 momentjs:1.1.1
-multiple-scms:0.6
 nodejs:1.2.4
 oauth-credentials:0.3
 oic-auth:1.0
