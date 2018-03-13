@@ -75,6 +75,24 @@ still not too sure about this one, it sounds good but its usability is a little 
 2. [Simple build pipeline](https://github.com/jenkinsci/simple-build-for-pipeline-plugin)
 it didn't work for me but it looks promising in the future
 
+## How to update plugins
+
+It is really hard to update plugins correctly, you can get backward compatibility problems really easy.
+
+First run (probably it is already deployed in OpenShift) the Jenkins instance you want to update from.
+Go to _Manage Jenkins_, _Manage Plugins_ and update the plugins you need for next version.
+
+After Jenkins is updated and you restart it, go to _Manage Jenkins_, _Script Console_ and run next script:
+
+```
+Jenkins.instance.pluginManager.plugins.each{
+  plugin -> 
+    println ("${plugin.getShortName()}:${plugin.getVersion()}")
+}
+```
+
+Then just inspect the result and update the `plugins.txt` file propertly.
+
 ## Note
 You'll need to [expose the Jenkins JNLP port](https://github.com/rawlingsj/openshift-jenkins-s2i-config/blob/master/configuration/config.xml#L80) and create a separate agent service like [this example](https://github.com/rawlingsj/openshift-jenkins-s2i-config/blob/master/jenkins-template.yml#L26-L43)
 
