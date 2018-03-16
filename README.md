@@ -84,14 +84,14 @@ Go to _Manage Jenkins_, _Manage Plugins_ and update the plugins you need for nex
 
 After Jenkins is updated and you restart it, go to _Manage Jenkins_, _Script Console_ and run next script:
 
-```
+```groovy
 Jenkins.instance.pluginManager.plugins.each{
   plugin -> 
     println ("${plugin.getShortName()}:${plugin.getVersion()}")
 }
 ```
 
-Then just inspect the result and update the `plugins.txt` file propertly.
+Then just inspect the result and update the `plugins.txt` file properly.
 
 ## Note
 You'll need to [expose the Jenkins JNLP port](https://github.com/rawlingsj/openshift-jenkins-s2i-config/blob/master/configuration/config.xml#L80) and create a separate agent service like [this example](https://github.com/rawlingsj/openshift-jenkins-s2i-config/blob/master/jenkins-template.yml#L26-L43)
