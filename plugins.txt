@@ -90,6 +90,7 @@ pipeline-stage-tags-metadata:1.2.7
 pipeline-stage-view:2.9
 pipeline-utility-steps:2.0.1
 plain-credentials:1.4
+prometheus:1.1.1
 pubsub-light:1.12
 resource-disposer:0.8
 scm-api:2.2.6
