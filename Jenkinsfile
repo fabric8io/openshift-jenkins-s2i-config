@@ -4,7 +4,7 @@ def repo = 'openshift-jenkins-s2i-config'
 def org = 'fabric8io'
 def project = org + '/' + repo
 def flow = new io.fabric8.Fabric8Commands()
-def baseImageVerion = "v8ca14b5"
+def baseImageVerion = "v4dd3216"
 def deploySnapshot = false
 def pipeline
 def snapshotImageName
@@ -42,7 +42,7 @@ dockerTemplate{
                     flow.addCommentToPullRequest(message, pr, project)
                 }
             }
-                
+
             deploySnapshot = true
 
 
@@ -88,15 +88,15 @@ if (deploySnapshot){
                 cleanWs()
                 deployRemoteOpenShift()
             }
-            
+
         }, kubernetes: {
             def containerName = 'k8s'
-            
+
             deployRemoteClusterNode(configSecretName: 'tiger-config', containerName: containerName, label: "jen_k8s_${env.CHANGE_ID}_${env.BUILD_NUMBER}"){
                 cleanWs()
                 deployRemoteKubernetes(snapshotImageName, namespace)
             }
-            
+
 
         },
         failFast: false
@@ -145,7 +145,7 @@ def addCredsScript = """
             def map = [:]
             map["TEST_ADMIN_PASSWORD"] = PASS
             map["EXTERNAL_DOCKER_REGISTRY_URL"] = '10.7.240.40:80' // this is nexus in the shared ns on test cluster, find a nice way to look this up so it's not hardcoded.
-    
+
             //swizzle the image name and deploy snashot
             ing = deployKubernetesSnapshot{
                 mavenRepo = 'http://central.maven.org/maven2/io/fabric8/apps/jenkins'
