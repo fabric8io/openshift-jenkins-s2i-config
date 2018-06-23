@@ -2,7 +2,6 @@ antisamy-markup-formatter:1.5
 apache-httpcomponents-client-4-api:4.5.5-2.1
 async-http-client:1.9.40.0
 authentication-tokens:1.3
-blueocean-autofavorite:1.2.2
 blueocean-bitbucket-pipeline:1.5.0
 blueocean-commons:1.5.0
 blueocean-config:1.5.0
