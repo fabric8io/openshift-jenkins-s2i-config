@@ -18,7 +18,7 @@ dockerTemplate{
             snapshotImageName = "fabric8/jenkins-openshift:SNAPSHOT-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
             stage ('build'){
                 container('s2i') {
-                    sh "s2i build . fabric8/jenkins-openshift-base:${baseImageVerion} ${snapshotImageName} --copy"
+                     sh "s2i build . openshift/jenkins-2-centos7:latest ${snapshotImageName} --copy"
                 }
             }
 
@@ -52,7 +52,7 @@ dockerTemplate{
 
             stage ('s2i build'){
                 container('s2i') {
-                    sh "s2i build . fabric8/jenkins-openshift-base:${baseImageVerion} fabric8/jenkins-openshift:${newVersion} --copy"
+                    sh "s2i build . openshift/jenkins-2-centos7:latest fabric8/jenkins-openshift:${newVersion} --copy"
                 }
             }
 
