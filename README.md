@@ -2,6 +2,8 @@
 
 The Jenkins image for OISO Tenants and https://jenkins.cd.test.fabric8.io.
 
+TEST
+
 ## Update plugins
 we broke the plugin update after changes due to https://github.com/openshiftio/openshift.io/issues/2612
 Hence introduce new way to update plugins.
