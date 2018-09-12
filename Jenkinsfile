@@ -4,7 +4,7 @@ def repo = 'openshift-jenkins-s2i-config'
 def org = 'fabric8io'
 def project = org + '/' + repo
 def flow = new io.fabric8.Fabric8Commands()
-def baseImageVerion = "v0072490"
+def baseImageVerion = "vd17d33a8b207baf0e17b8af3ba48049f5eceb113"
 def deploySnapshot = false
 def pipeline
 def snapshotImageName
