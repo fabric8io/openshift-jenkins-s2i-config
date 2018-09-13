@@ -24,6 +24,7 @@ function setup() {
                 ghprbGhRepository \
                 ghprbPullId \
                 GIT_COMMIT \
+                CHANGE_ID \
                 BUILD_ID)"
 
         mkdir -p ${HOME}/.docker
