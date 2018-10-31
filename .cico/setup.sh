@@ -4,7 +4,7 @@
 #
 # This is automatically updated by fabric8-jenkins/jenkins-openshift-base
 # at merge time via a PR but you can always modify it manually for fun and giggles.
-BASE_IMAGE_NAMESPACE="openshift/jenkins-2-centos7"
+BASE_IMAGE_NAMESPACE='openshift/jenkins-2-centos7'
 BASE_IMAGE_VERSION="v4.0"
 
 set -ex
