@@ -62,7 +62,7 @@ jquery-detached:1.2.1
 jsch:0.1.54.1
 junit:1.26
 kerberos-sso:1.4
-kubernetes:1.12.0
+kubernetes:1.10.2
 kubernetes-credentials:0.4.0
 lockable-resources:2.2
 mailer:1.22
@@ -99,7 +99,7 @@ pipeline-utility-steps:2.0.1
 plain-credentials:1.4
 pubsub-light:1.12
 resource-disposer:0.12
-scm-api:2.2.6
+scm-api:2.2.7
 script-security:1.48
 sse-gateway:1.15
 ssh-agent:1.17
