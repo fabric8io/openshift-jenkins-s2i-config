@@ -52,6 +52,7 @@ github-pr-coverage-status:1.9.1
 github-pullrequest:0.1.0-rc29
 github:1.29.3
 gradle:1.28
+gravatar:2.1
 htmlpublisher:1.17
 icon-shim:2.0.3
 jackson2-api:2.8.11.3
