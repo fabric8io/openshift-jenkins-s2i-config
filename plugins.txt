@@ -53,6 +53,7 @@ github-pr-coverage-status:1.9.1
 github-pullrequest:0.1.0-rc29
 github:1.29.3
 gradle:1.28
+gravatar:2.1
 htmlpublisher:1.17
 icon-shim:2.0.3
 jackson2-api:2.8.11.3
@@ -73,6 +74,7 @@ matrix-auth:2.2
 matrix-project:1.12
 metrics:3.1.2.11
 momentjs:1.1.1
+monitoring:1.74.0
 nodejs:1.2.5
 oauth-credentials:0.3
 oic-auth:1.2

@@ -4,7 +4,8 @@
 #
 # This is automatically updated by fabric8-jenkins/jenkins-openshift-base
 # at merge time via a PR but you can always modify it manually for fun and giggles.
-BASE_IMAGE_VERSION="v95933d9"
+BASE_IMAGE_NAMESPACE='openshift/jenkins-2-centos7'
+BASE_IMAGE_VERSION="v4.0"
 
 set -ex
 
@@ -58,7 +59,7 @@ function build() {
     local snapshotImageName="fabric8/jenkins-openshift:SNAPSHOT-PR-${ghprbPullId}-${BUILD_ID}"
     local message="Good news @${ghprbPullAuthorLogin} snapshot Jenkins image is available. \`docker pull ${snapshotImageName}\`"
 
-    s2i build . fabric8/jenkins-openshift-base:${BASE_IMAGE_VERSION} ${snapshotImageName} --copy
+    s2i build . ${BASE_IMAGE_NAMESPACE}:${BASE_IMAGE_VERSION} ${snapshotImageName} --copy
 
     docker push ${snapshotImageName}
 
@@ -67,7 +68,7 @@ function build() {
 
 function deploy() {
     local newVersion="v$(git rev-parse --short ${GIT_COMMIT})"
-    s2i build . fabric8/jenkins-openshift-base:${BASE_IMAGE_VERSION} \
+    s2i build . ${BASE_IMAGE_NAMESPACE}:${BASE_IMAGE_VERSION} \
         fabric8/jenkins-openshift:${newVersion} --copy
 
     docker push fabric8/jenkins-openshift:${newVersion}
