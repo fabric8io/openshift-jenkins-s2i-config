@@ -73,6 +73,7 @@ matrix-auth:2.2
 matrix-project:1.12
 metrics:3.1.2.11
 momentjs:1.1.1
+monitoring:1.74.0
 nodejs:1.2.5
 oauth-credentials:0.3
 oic-auth:1.2
