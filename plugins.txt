@@ -113,6 +113,7 @@ token-macro:2.3
 updatebot:1.0.10
 url-auth-sso:1.0
 variant:1.1
+vsphere-cloud:2.18
 workflow-aggregator:2.5
 workflow-api:2.30
 workflow-basic-steps:2.6
