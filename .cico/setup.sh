@@ -4,7 +4,7 @@
 #
 # This is automatically updated by fabric8-jenkins/jenkins-openshift-base
 # at merge time via a PR but you can always modify it manually for fun and giggles.
-BASE_IMAGE_VERSION="vc9cba3c"
+BASE_IMAGE_VERSION="PR-53-59"
 
 set -ex
 
