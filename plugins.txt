@@ -35,7 +35,7 @@ display-url-api:2.3.0
 docker-commons:1.11
 docker-workflow:1.15.1
 dockerhub-notification:2.2.1
-durable-task:1.21
+durable-task:1.26
 email-ext:2.63
 embeddable-build-status:1.9
 external-monitor-job:1.7
