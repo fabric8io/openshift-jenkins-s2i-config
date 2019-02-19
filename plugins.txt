@@ -28,7 +28,7 @@ bouncycastle-api:2.16.3
 branch-api:2.0.18
 build-timeout:1.19
 cloudbees-folder:6.3
-config-file-provider:3.3
+config-file-provider:3.5
 credentials-binding:1.15
 credentials:2.1.17
 display-url-api:2.3.0
@@ -47,7 +47,7 @@ git:4.0.0-beta3
 github-api:1.90
 github-branch-source:2.4.1
 github-issues:1.2.4
-github-oauth:0.29
+github-oauth:0.31
 github-organization-folder:1.6
 github-pr-coverage-status:1.9.1
 github-pullrequest:0.1.0-rc29
@@ -75,7 +75,7 @@ metrics:3.1.2.11
 momentjs:1.1.1
 nodejs:1.2.5
 oauth-credentials:0.3
-oic-auth:1.2
+oic-auth:1.5
 openid:2.2
 openid4java:0.9.8.0
 openshift-client:1.0.21
@@ -102,7 +102,7 @@ plain-credentials:1.4
 pubsub-light:1.12
 resource-disposer:0.12
 scm-api:2.2.7
-script-security:1.50
+script-security:1.52
 sse-gateway:1.15
 ssh-agent:1.17
 ssh-credentials:1.14
@@ -110,7 +110,7 @@ ssh-slaves:1.26
 structs:1.17
 subversion:2.10.3
 timestamper:1.8.9
-token-macro:2.3
+token-macro:2.6
 updatebot:1.0.10
 url-auth-sso:1.0
 variant:1.1
