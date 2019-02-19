@@ -103,7 +103,7 @@ pubsub-light:1.12
 resource-disposer:0.12
 scm-api:2.2.8
 script-security:1.52
-sse-gateway:1.15
+sse-gateway:1.16
 ssh-agent:1.17
 ssh-credentials:1.14
 ssh-slaves:1.26
