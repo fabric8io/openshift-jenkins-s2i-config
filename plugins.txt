@@ -23,7 +23,7 @@ blueocean-pipeline-scm-api:1.5.0
 blueocean-rest-impl:1.5.0
 blueocean-rest:1.5.0
 blueocean-web:1.5.0
-blueocean:1.5.0
+blueocean:1.10.2
 bouncycastle-api:2.16.3
 branch-api:2.0.18
 build-timeout:1.19
