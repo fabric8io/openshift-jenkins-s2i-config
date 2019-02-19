@@ -31,7 +31,7 @@ cloudbees-folder:6.3
 config-file-provider:3.3
 credentials-binding:1.15
 credentials:2.1.17
-display-url-api:2.2.0
+display-url-api:2.3.0
 docker-commons:1.11
 docker-workflow:1.15.1
 dockerhub-notification:2.2.1
